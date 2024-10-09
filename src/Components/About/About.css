@@ -1,0 +1,24 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+    font-size: 0.9rem;
+    margin-top: 5rem;
+}
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.about p {
+    margin-bottom: 1rem;
+}
+#about-text {
+    max-width: 60%;
+}
+.about img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
