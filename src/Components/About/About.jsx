@@ -1,10 +1,11 @@
 import React from 'react';
 import './About.css';
+import img from '../Assets/WhatsApp Image 2024-10-07 at 11.30.32 PM.jpeg';
 
 const About = () => {
     return (
         <section className="about" id="about">
-            <img src="" alt="My image" />
+            <img src={img} alt="My image" />
             <div id="about-text">
                 <h2>About me</h2>
                 <p>

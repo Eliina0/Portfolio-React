@@ -2,36 +2,42 @@ import React from 'react';
 import './SkillCard.jsx';
 import './Skills.css';
 import SkillCard from './SkillCard.jsx';
+import htmlImg from '../Assets/html.png'; 
+import cssImg from '../Assets/css.png';
+import javascriptImg from '../Assets/js.webp';
+import reactImg from '../Assets/react.png';
+import javaImg from '../Assets/java.png';
+import phpImg from '../Assets/php.png';
 
 const skills = [
     {
         name: "HTML",
-        icon: "./images/html.png",
+        icon: htmlImg,
         progress: "90%"
     },
     {
         name: "CSS",
-        icon: "./images/css.png",
+        icon: cssImg,
         progress: "85%"
     },
     {
         name: "JavaScript",
-        icon: "./images/js.webp",
+        icon: javascriptImg,
         progress: "80%"
     },
     {
         name: "React",
-        icon: "./images/react.png",
+        icon: reactImg,
         progress: "80%"
     },
     {
         name: "Java",
-        icon: "./images/java.png",
+        icon: javaImg,
         progress: "80%"
     },
     {
         name: "PHP",
-        icon: "./images/php.png",
+        icon: phpImg,
         progress: "80%"
     }
 ];

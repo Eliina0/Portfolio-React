@@ -5,6 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { IoMenu, IoClose } from "react-icons/io5"; 
 import { AiOutlineUser } from 'react-icons/ai'; 
 import { GiSkills } from 'react-icons/gi'; 
+import logo from '../Assets/logo.png';
 
 import './Header.css';
 
@@ -17,7 +18,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img src="./assets/images/logo.png" alt="logo" />
+      <img src={logo} alt="logo" />
       <ul id="menuList" className={menuOpen ? "open" : ""}> 
         <li><a href="#hero"><CiHome /> Home</a></li>
         <li><a href="#about"><AiOutlineUser /> About</a></li>
