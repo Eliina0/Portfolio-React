@@ -1,0 +1,62 @@
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 4rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-right: 10px;
+}
+
+.contact span {
+    color: var(--error);
+    font-size: 1.5rem;
+}
+
+.contact button {
+    margin-top: 3rem;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 0 8px rgba(73, 187, 244, 0.5);
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(73, 187, 244, 0.8);
+}
+
+.contact .input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.error-message {
+    color: var(--error);
+    font-size: 0.9rem;
+    text-align: left;
+}
