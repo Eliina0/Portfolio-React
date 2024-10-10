@@ -1,0 +1,104 @@
+.my-events {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.my-events h2 {
+  margin-bottom: 2rem;
+}
+.add-events {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+.input-group span {
+  color: var(--error);
+  font-size: 1.5rem;
+}
+.event {
+  padding: 50px;
+  text-align: center;
+}
+.event form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .add-events {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+.day-name,
+.calendar-day {
+  padding: 10px;
+  text-align: center;
+}
+.calendar-day {
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+.calendar-day:hover {
+  background-color: var(--active-color);
+  color: white;
+  border-radius: 40%;
+}
+.events-list {
+  margin: 2rem;
+  padding: 1rem;
+  width: 500px;
+}
+.events-list h2 {
+  text-align: center;
+}
+.events-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+.events-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 0.8rem;
+}
+.events-list h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+.events-list p {
+  margin: 5px 0;
+  color: #555;
+}
+.delete-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  color: var(--error);
+  font-size: 1.5rem;
+}
+.search-box {
+  margin-bottom: 2rem;
+}

@@ -1,94 +1,80 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: var(--bg-color);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    transition: background-color 0.3s;
-  }
-  .header img {
-    height: 40px;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+.header img {
+  height: 40px;
+  cursor: pointer;
+}
+
+ul#menuList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+ul#menuList li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+ul#menuList li a:hover {
+  color: var(--accent-color);
+  text-shadow: 0 0 5px var(--accent-color);
+}
+
+ul#menuList li a svg {
+  font-size: 20px;
+}
+
+.mobile-navbar {
+  display: none;
+  font-size: 20px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
   ul#menuList {
-    list-style: none;
-    display: flex;
-    gap: 20px; 
-    transition: all 0.3s ease;
-  }
-  
-  ul#menuList li a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: color 0.3s, text-shadow 0.3s;
-  }
-  
-  ul#menuList li a:hover {
-    color: var(--accent-color);
-    text-shadow: 0 0 5px var(--accent-color);
-    background-color: rgba(255, 255, 255, 0.1); 
-  }
-  
-  ul#menuList li a svg {
-    font-size: 20px;
-  }
-  
-  .mobile-navbar {
     display: none;
-    font-size: 20px;
-    color: var(--text-color);
-    cursor: pointer;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
   }
-  
-  @media screen and (max-width: 768px) {
-    ul#menuList {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 70px;
-      right: 0;
-      background-color: var(--bg-color);
-      width: 100%;
-      padding: 20px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
-      z-index: 100;
-    }
-  
-    ul#menuList.open {
-      display: flex;
-      animation: slideDown 0.3s ease; 
-    }
-  
-    @keyframes slideDown {
-      from {
-        transform: translateY(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  
-    .mobile-navbar {
-      display: block;
-    }
-  
-    ul#menuList li a {
-      font-size: 15px;
-      padding: 10px;
-      text-align: center;
-      width: 100%;
-    }
+
+  ul#menuList.open {
+    display: flex;
   }
-  
+
+  .mobile-navbar {
+    display: block;
+  }
+
+  ul#menuList li a {
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+}

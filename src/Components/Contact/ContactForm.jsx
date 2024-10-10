@@ -49,7 +49,10 @@ const ContactForm = () => {
                         name="name" 
                         required 
                         value={name}
-                        onChange={(e) => setName(e.target.value)} 
+                        onChange={(e) => {
+                            setName(e.target.value); 
+                            setErrors((prevErrors) => ({ ...prevErrors, name: '' }));
+                          }}
                     />
                 </div>
                 {errors.name && <div className="error-message">{errors.name}</div>}
