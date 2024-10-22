@@ -1,51 +1,55 @@
 .skills {
-    padding: 50px 20px;
-    text-align: center;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .skills h2 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  font-family: "Agdasima", sans-serif;
+  font-size: 2.5rem;
 }
 
 .skills-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .skill {
-    width: 220px;
-    margin: 20px;
-    text-align: center;
+  width: 220px;
+  margin: 20px;
+  text-align: center;
 }
 
 .skill h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-family: "Agdasima", sans-serif;
+  font-size: 1.5rem;
 }
 
 .progress {
-    background-color: #ddd;
-    border-radius: 20px;
-    position: relative;
-    height: 20px;
-    width: 100%;
-    margin-bottom: 10px;
+  background-color: #ddd;
+  border-radius: 20px;
+  position: relative;
+  height: 20px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .progress-bar {
-    background-color: var(--accent-color);
-    height: 100%;
-    border-radius: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  background-color: var(--accent-color);
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .icon img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
 }

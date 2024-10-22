@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import PropTypes from "prop-types";
 
 const ProjectCard = ({ project, onClick }) => {
   return (
@@ -12,6 +13,16 @@ const ProjectCard = ({ project, onClick }) => {
       </a>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+  }).isRequired,
+  onClick: PropTypes.func,
 };
 
 export default ProjectCard;

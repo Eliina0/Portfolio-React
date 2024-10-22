@@ -13,15 +13,13 @@ import MyEvents from "./Components/Events/MyEvents";
 const App = () => {
   return (
     <div>
-      <Header />
       <Hero />
       <About />
       <Projects />
       <Skills />
       <ContactForm />
-      <MyEvents />
+      {/*<MyEvents />*/}
       <ToTopBtn />
-      <Footer />
     </div>
   );
 };

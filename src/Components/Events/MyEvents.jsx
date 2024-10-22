@@ -6,6 +6,10 @@ import EventsList from "./EventsList";
 
 const MyEvents = () => {
   const [dateSelected, setDateSelected] = useState("");
+  const [events, setEvents] = useState(
+    JSON.parse(localStorage.getItem("Events")) || []
+  );
+
   return (
     <section className="my-events">
       <h2>My Events</h2>

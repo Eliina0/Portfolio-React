@@ -1,23 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Projects.css";
 
 const FilterButtons = ({ selectedCategory, setSelectedCategory }) => {
   return (
     <div className="filter-buttons">
       <button
-        className={`btn ${selectedCategory} === "All" ? "active" : ""`}
+        className={`button ${selectedCategory === "All" ? "active" : ""}`}
         onClick={() => setSelectedCategory("All")}
       >
         All
       </button>
       <button
-        className={`btn ${selectedCategory} === "full-stack" ? "active" : ""`}
+        className={`button ${
+          selectedCategory === "full-stack" ? "active" : ""
+        }`}
         onClick={() => setSelectedCategory("full-stack")}
       >
         Full Stack
       </button>
       <button
-        className={`btn ${selectedCategory} === "front-end" ? "active" : ""`}
+        className={`button ${selectedCategory === "front-end" ? "active" : ""}`}
         onClick={() => setSelectedCategory("front-end")}
       >
         Front End

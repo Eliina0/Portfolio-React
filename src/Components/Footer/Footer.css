@@ -1,28 +1,29 @@
 .footer {
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer p {
-    margin: 0;
-    font-size: 1rem;
-    color: var(--text-color);
+  margin: 0;
+  font-family: "Agdasima", sans-serif;
+  font-size: 1.2rem;
+  color: var(--text-color);
 }
 .socials {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .socials a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin: 0 10px;
-    transition: color -.3s ease;
-    color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color -0.3s ease;
+  color: var(--accent-color);
 }
 .socials a:hover {
-    color: var(--accent-color2);
+  color: var(--accent-color2);
 }

@@ -5,6 +5,8 @@
 
 .contact h2 {
   margin-bottom: 4rem;
+  font-family: "Agdasima", sans-serif;
+  font-size: 2.5rem;
 }
 
 .contact form {
@@ -17,9 +19,10 @@
 }
 
 .contact label {
-  font-size: 1rem;
   color: var(--text-color);
   margin-right: 10px;
+  font-family: "Agdasima", sans-serif;
+  font-size: 1.5rem;
 }
 
 .contact span {

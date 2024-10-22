@@ -80,7 +80,9 @@ const Projects = () => {
 
   const toggleModalVisibility = (project = null) => {
     setModalOpen(!modalOpen);
-    setSelectedProject(project);
+    if (!modalOpen) {
+      setSelectedProject(project);
+    }
   };
 
   const filteredProjects =
