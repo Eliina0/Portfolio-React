@@ -1,4 +1,3 @@
-// projectsData.js
 import toDoListImg from "../Assets/to-do-list.png";
 import weatherAppImg from "../Assets/weather-app.png";
 import itemListApp from "../Assets/item-list-app.png";
