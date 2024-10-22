@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-import { CiHome } from "react-icons/ci";
-import { HiOutlineComputerDesktop } from "react-icons/hi2";
-import { AiOutlineMail } from "react-icons/ai";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { AiOutlineUser } from "react-icons/ai";
-import { GiSkills } from "react-icons/gi";
-import logo from "../Assets/logo.png";
+import { Link } from "react-router-dom";
 
 import "./Header.css";
 
@@ -21,19 +16,19 @@ const Header = () => {
       <h1 className="logoET"> //ET </h1>
       <ul id="menuList" className={menuOpen ? "open" : ""}>
         <li>
-          <a href="#hero"> Home</a>
+          <Link to={"/"}>Home</Link>
         </li>
         <li>
-          <a href="#about"> About </a>
+          <Link to={"/aboutMe"}>About</Link>
         </li>
         <li>
-          <a href="#projects"> Projects</a>
+          <Link to={"/projects"}>Projects</Link>
         </li>
         <li>
-          <a href="#skills"> Skills</a>
+          <Link to={"/skills"}>Skills</Link>
         </li>
         <li>
-          <a href="#contact"> Contact </a>
+          <Link to={"/contactMe"}>Contact</Link>
         </li>
       </ul>
       <div className="mobile-navbar" id="mobile-navbar" onClick={toggleMenu}>

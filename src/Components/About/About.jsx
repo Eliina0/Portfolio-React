@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import React from 'react';
-import './About.css';
-import img from '../Assets/woman (1).png';
-=======
 import React from "react";
 import "./About.css";
-import img from "../Assets/imgg.jpg";
->>>>>>> fd5712f (Router)
+import img from "../Assets/woman (1).png";
 
 const About = () => {
   return (

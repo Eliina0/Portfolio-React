@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project, onClick }) => {
   return (
@@ -8,9 +9,14 @@ const ProjectCard = ({ project, onClick }) => {
       <img src={project.image} alt={project.title} />
       <h3>{project.title}</h3>
       <p>{project.description}</p>
-      <a href={project.link} target="_blank" className="btn">
-        View Project
-      </a>
+      <div className="btn-group">
+        <a href={project.link} target="_blank" className="btn">
+          View Project
+        </a>
+        <Link to={`/projects/${project.id}`} className="btn">
+          Learn More
+        </Link>
+      </div>
     </div>
   );
 };
