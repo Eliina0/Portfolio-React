@@ -1,16 +1,26 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "../App";
-import About from "../Components/About/About.jsx";
-import Projects from "../Components/Projects/Projects.jsx";
-import ContactForm from "../Components/Contact/ContactForm.jsx";
-import Skills from "../Components/Skills/Skills.jsx";
+import { lazy, Suspense } from "react";
 import Layout from "./Layout.jsx";
-import ProjectDetails from "../Components/Projects/ProjectDetails.jsx";
+
+const App = lazy(() => import("../App"));
+const About = lazy(() => import("../Components/About/About.jsx"));
+const Projects = lazy(() => import("../Components/Projects/Projects.jsx"));
+const ContactForm = lazy(() => import("../Components/Contact/ContactForm.jsx"));
+const Skills = lazy(() => import("../Components/Skills/Skills.jsx"));
+const ProjectDetails = lazy(() =>
+  import("../Components/Projects/ProjectDetails.jsx")
+);
+
+const Loading = () => <div>Loading...</div>;
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <Suspense fallback={<Loading />}>
+        <Layout />
+      </Suspense>
+    ),
     children: [
       {
         path: "/",
